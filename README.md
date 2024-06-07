@@ -21,9 +21,9 @@ Este projeto tem como objetivo criar um sistema de agendamento para uma clínica
 
 Aqui estão os links das pessoas que contribuíram para este projeto:
 
-- [Nome do Contribuidor 1](link)
-- [Nome do Contribuidor 2](link)
-- [Nome do Contribuidor 3](link)
+- [Marcello Topel](https://github.com/MarcelloTopel)
+- [Gleysson](https://github.com/gleysson001)
+- [Victhor]([link](https://github.com/drevicthor))
 
 ## Licença
 
