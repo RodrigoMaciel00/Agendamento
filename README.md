@@ -23,7 +23,7 @@ Aqui estão os links das pessoas que contribuíram para este projeto:
 
 - [Marcello Topel](https://github.com/MarcelloTopel)
 - [Gleysson](https://github.com/gleysson001)
-- [Victhor]([(https://github.com/drevicthor))
+- [Victhor](https://github.com/drevicthor)
 - [Rodrigo Maciel](https://github.com/RodrigoMaciel00)
 
 ## Licença
