@@ -32,4 +32,4 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ## Contato
 
-Para mais informações, entre em contato conosco através do e-mail: contato@clinicaescola.com.br
+Para mais informações, entre em contato conosco através do e-mail: rodzmaciel21@gmail.com
