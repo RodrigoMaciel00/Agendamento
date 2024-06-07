@@ -67,8 +67,6 @@ main {
 }
 
 #hero {
-    background: url('images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
     color: #aca7ee;
     text-align: center;
     padding: 50px 20px;
