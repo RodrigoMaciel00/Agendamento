@@ -23,6 +23,12 @@ nav {
     padding: 0 20px;
 }
 
+.logo {
+    max-width: 120px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
 #nav-menu {
     list-style: none;
     margin: 0;
@@ -61,8 +67,9 @@ main {
 }
 
 #hero {
-    background-color: #007bff;
-    color: white;
+    background: url('images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #aca7ee;
     text-align: center;
     padding: 50px 20px;
     border-radius: 8px;
@@ -101,7 +108,7 @@ h2 {
     color: #007bff;
 }
 
-.service-item {
+.service-item, .team-member, .team-photo, .blockquote, .article {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -110,8 +117,43 @@ h2 {
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.service-item:hover {
+.service-item:hover, .team-member:hover, .blockquote:hover, .article:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon, .team-photo {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #555;
+}
+
+article {
+    text-align: left;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+article a:hover {
+    color: #0056b3;
 }
 
 footer {
