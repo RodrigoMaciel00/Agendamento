@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/register.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="Logo da Uniesp" class="logo">
+        <h1>Cadastro</h1>
+        <p>Preencha as informações abaixo para se cadastrar.</p>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="owner_name">Nome Completo:</label>
+                <input type="text" id="owner_name" name="owner_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Celular/WhatsApp:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirme a Senha:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div class="form-group">
+                <label for="pet_type">Tipo de Animal:</label>
+                <select id="pet_type" name="pet_type" required>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Pássaro">Pássaro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pet_breed">Raça do Animal:</label>
+                <input type="text" id="pet_breed" name="pet_breed">
+            </div>
+            <button type="submit">Cadastrar</button>
+            <button type="button" onclick="window.location.href='index.html'">Voltar ao Principal</button>
+        </form>
+    </div>
+</body>
+</html>

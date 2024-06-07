@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta</title>
+    <link rel="stylesheet" href="css/schedule.css">
+    <script src="js/schedule.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="Logo da Uniesp" class="logo">
+        <h1>Agendar Consulta</h1>
+        <p>Preencha as informações abaixo para agendar uma consulta.</p>
+        <form id="scheduleForm">
+            <div class="form-group">
+                <label for="service">Serviço:</label>
+                <select id="service" name="service" required>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Ultrassom">Ultrassom</option>
+                    <option value="Raio-X">Raio-X</option>
+                    <option value="Vacinação">Vacinação</option>
+                    <option value="Cirurgia">Cirurgia</option>
+                    <option value="Exames Hematológicos">Exames Hematológicos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="additional_info">Informações Adicionais:</label>
+                <textarea id="additional_info" name="additional_info"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="emergency_contact">Contato de Emergência:</label>
+                <input type="text" id="emergency_contact" name="emergency_contact" required>
+            </div>
+            <div class="form-group">
+                <label for="pet_name">Nome do Pet:</label>
+                <input type="text" id="pet_name" name="pet_name" required>
+            </div>
+            <button type="submit">Agendar</button>
+            <button type="button" onclick="window.location.href='index.html'">Voltar ao Principal</button>
+        </form>
+    </div>
+</body>
+</html>
