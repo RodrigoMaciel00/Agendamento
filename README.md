@@ -17,33 +17,6 @@ Este projeto tem como objetivo criar um sistema de agendamento para uma clínica
 - 👤 **Cadastro de Usuários**: Registro de novos usuários (estudantes, veterinários e pacientes).
 - 📝 **Histórico de Consultas**: Acompanhamento do histórico de consultas dos pacientes.
 
-## Instalação
-
-### Pré-requisitos
-
-- ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white) e npm (para o front-end)
-- ![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white) Development Kit (JDK) (para o back-end)
-- Servidor de banco de dados SQL (MySQL, PostgreSQL, etc.)
-
-### Passo a Passo
-
-1. Clone este repositório:
-   ```bash
-   git clone <URL-do-repositorio>
-   ```
-2. Navegue até o diretório do projeto e instale as dependências do front-end:
-   ```bash
-   cd frontend
-   npm install
-   ```
-3. Compile e inicie o servidor back-end:
-   ```bash
-   cd backend
-   ./gradlew build
-   ./gradlew bootRun
-   ```
-4. Configure o banco de dados SQL conforme necessário e execute os scripts de criação de tabelas.
-
 ## Contribuidores
 
 Aqui estão os links das pessoas que contribuíram para este projeto:
