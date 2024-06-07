@@ -1,7 +1,3 @@
-Para deixar o README mais bonito e atraente, você pode adicionar elementos visuais como cabeçalhos, listas, imagens, badges e links formatados. Aqui está uma versão aprimorada do README com esses elementos:
-
----
-
 # Projeto de Agendamento - Clínica Escola de Medicina Veterinária
 
 ## Descrição
@@ -64,7 +60,3 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICEN
 ## Contato
 
 Para mais informações, entre em contato conosco através do e-mail: contato@clinicaescola.com.br
-
----
-
-Adicione os URLs corretos para as imagens, os nomes e links dos contribuidores e qualquer outra informação relevante. Isso tornará o README mais visualmente atraente e profissional.
