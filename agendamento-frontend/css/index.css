@@ -1,0 +1,258 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+#nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+#nav-menu li {
+    margin: 0 10px;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#nav-menu a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
+#nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main {
+    margin: 20px 0;
+}
+
+#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#hero .btn:hover {
+    background-color: #003f8a;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.services-grid,
+.team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item,
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover,
+.team-member:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon,
+.team-photo {
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+blockquote:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #555;
+    text-align: right;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+article a:hover {
+    color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    #nav-menu.visible {
+        display: flex;
+    }
+
+    #nav-menu li {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+
+    #nav-menu a {
+        display: block;
+        padding: 10px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    .services-grid,
+    .team-grid {
+        flex-direction: column;
+    }
+
+    #hero {
+        padding: 50px 20px;
+    }
+}
