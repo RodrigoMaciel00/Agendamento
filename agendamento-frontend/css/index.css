@@ -1,13 +1,12 @@
-/* Reset básico */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;

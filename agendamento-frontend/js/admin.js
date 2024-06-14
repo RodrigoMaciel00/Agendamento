@@ -1,20 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const appointmentsContainer = document.getElementById('appointments');
+
+  // Simulating fetching data from an API
   const appointments = [
-    { date: '2024-06-14', time: '10:00', patient: 'John Doe', pet: 'Rex' },
-    { date: '2024-06-14', time: '11:00', patient: 'Jane Smith', pet: 'Whiskers' }
+      { id: 1, date: '2024-06-01', time: '10:00', service: 'Consulta', petName: 'Rex' },
+      { id: 2, date: '2024-06-02', time: '14:00', service: 'Vacinação', petName: 'Bella' },
+      { id: 3, date: '2024-06-03', time: '09:00', service: 'Raio-X', petName: 'Luna' }
   ];
 
-  const appointmentContainer = document.getElementById('appointments');
+  function renderAppointments() {
+      appointmentsContainer.innerHTML = '';
+      appointments.forEach(appointment => {
+          const appointmentElement = document.createElement('div');
+          appointmentElement.classList.add('appointment');
+          appointmentElement.innerHTML = `
+              <p><strong>Data:</strong> ${appointment.date}</p>
+              <p><strong>Hora:</strong> ${appointment.time}</p>
+              <p><strong>Serviço:</strong> ${appointment.service}</p>
+              <p><strong>Nome do Pet:</strong> ${appointment.petName}</p>
+          `;
+          appointmentsContainer.appendChild(appointmentElement);
+      });
+  }
 
-  appointments.forEach(appointment => {
-    const appointmentDiv = document.createElement('div');
-    appointmentDiv.classList.add('appointment');
-    appointmentDiv.innerHTML = `
-      <p><strong>Data:</strong> ${appointment.date}</p>
-      <p><strong>Hora:</strong> ${appointment.time}</p>
-      <p><strong>Paciente:</strong> ${appointment.patient}</p>
-      <p><strong>Pet:</strong> ${appointment.pet}</p>
-    `;
-    appointmentContainer.appendChild(appointmentDiv);
-  });
+  renderAppointments();
 });

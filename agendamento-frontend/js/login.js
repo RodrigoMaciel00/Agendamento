@@ -1,13 +1,17 @@
-document.getElementById('login-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+document.addEventListener('DOMContentLoaded', function() {
+  const loginForm = document.getElementById('login-form');
 
-  // Autenticação básica (credenciais fixas para exemplo)
-  if(username === 'admin' && password === 'admin123') {
-    window.location.href = 'admin.html';
-  } else {
-    alert('Credenciais inválidas!');
-  }
+  loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Simulate authentication
+      if (username === 'admin' && password === '123') {
+          window.location.href = 'admin.html';
+      } else {
+          alert('Username or password is incorrect');
+      }
+  });
 });
